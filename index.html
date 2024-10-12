@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Dream Lodge</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- TailwindCss -->
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="shadow-bottom">
+      <nav class="container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="px-1 btn btn-ghost lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow"
+              >
+                <li class="font-bold"><a class="font-urbanist">Home</a></li>
+                <li class="font-semibold">
+                  <a class="text-gray-600 font-urbanist">About</a>
+                </li>
+                <li class="font-semibold">
+                  <a class="text-gray-600 font-urbanist">Rooms</a>
+                </li>
+                <li class="font-semibold">
+                  <a class="text-gray-600 font-urbanist">Blog</a>
+                </li>
+                <li class="font-semibold">
+                  <a class="text-gray-600 font-urbanist">Page</a>
+                </li>
+              </ul>
+            </div>
+            <a href="">
+              <img
+                class="hidden h-20 py-5 ps-0 md:ps-3 lg:ps-0 md:block lg:block"
+                src="../assets/img/logo1.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 menu menu-horizontal">
+              <li class="font-bold">
+                <a class="px-[30px] font-urbanist hover:bg-transparent">Home</a>
+              </li>
+              <li class="font-semibold">
+                <a
+                  class="px-[30px] text-gray-600 font-urbanist hover:bg-transparent hover:text-black"
+                  >About</a
+                >
+              </li>
+              <li class="font-semibold">
+                <a
+                  class="px-[30px] text-gray-600 font-urbanist hover:bg-transparent hover:text-black"
+                  >Rooms</a
+                >
+              </li>
+              <li class="font-semibold">
+                <a
+                  class="px-[30px] text-gray-600 font-urbanist hover:bg-transparent hover:text-black"
+                  >Blog</a
+                >
+              </li>
+              <li class="font-semibold">
+                <a
+                  class="px-[30px] text-gray-600 font-urbanist hover:bg-transparent hover:text-black"
+                  >Page</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex items-center gap-[18px]">
+            <p class="font-[Urbanist] font-semibold text-gray-600">
+              Login/Signup
+            </p>
+
+            <a
+              href=""
+              class="text-white text-sm font-bold bg-beige-200 px-[26px] py-[15px] rounded-full font-urbanist hover:shadow-bottom"
+              >Reservation</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero section -->
+      <section class="mt-16 lg:mt-24">
+        <div class="container relative px-3 mx-auto lg:px-0">
+          <div class="flex flex-col gap-3 md:flex-row">
+            <div class="relative basis-3/5">
+              <!-- Text Section -->
+              <h1
+                class="pt-2 lg:pt-5 relative text-5xl font-medium lg:text-[90px] lg:leading-[82px] font-playfair text-black z-10"
+              >
+                Find the top <br />Hotels nearby<span class="text-beige-200"
+                  >.</span
+                >
+              </h1>
+              <p
+                class="mt-6 text-sm font-medium text-gray-600 lg:pe-5 lg:text-lg font-urbanist"
+              >
+                Looking for a comfortable and convenient place to call home? Our
+                house rental offers spacious living areas, modern amenities, and
+                a prime location. Featuring multiple bedrooms, updated kitchens,
+                and cozy living spaces, it's perfect for families or
+                professionals.
+              </p>
+
+              <!-- Header title background pattern -->
+              <div
+                class="absolute z-0 lg:right-12 lg:top-[118px] md:right-8 md:top-[67px] top-16 right-0"
+              >
+                <svg
+                  class="lg:w-[370px] lg:h-[68px] w-[200px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 370 68"
+                  fill="none"
+                >
+                  <path
+                    d="M186.654 8.30658C168.283 9.61906 146.769 11.1966 121.349 13.1044C100.988 14.5092 80.6298 16.5357 60.375 18.6821C56.4682 19.0929 56.263 19.1651 56.5851 21.7016C56.5954 23.5672 56.7885 25.3696 56.9808 27.1729C57.0773 28.0741 57.173 28.9754 57.2471 29.8848L57.2567 29.9096C39.2955 30.6578 21.3935 31.9318 3.58902 33.315C-0.0326361 33.5937 -0.218229 33.6564 0.326155 36.1546C0.513799 37.9845 0.866262 39.7589 1.21961 41.5331C1.39585 42.4203 1.57197 43.3068 1.72742 44.2012C1.88391 44.5446 1.96664 44.9128 2.04098 45.2445C2.08497 45.4416 2.12639 45.6261 2.17801 45.7848C2.27179 46.6993 3.40275 47.4216 4.68741 47.7761C6.26679 48.1885 7.84538 48.6018 9.54747 48.3413C10.8785 48.207 12.0228 48.1341 13.1682 48.0626C47.8514 45.2617 150.846 41.2777 207.076 39.7995C182.854 41.4487 151.275 43.7133 108.789 46.9031C88.4275 48.3071 68.0691 50.3336 47.8154 52.4806C43.9076 52.8916 43.7023 52.963 44.0254 55.5001C44.0357 57.3657 44.2278 59.1675 44.4201 60.9708C44.5167 61.872 44.6132 62.7732 44.6864 63.6827C44.8179 64.0286 44.8679 64.4025 44.913 64.7395C44.9402 64.9395 44.9648 65.1269 45.0039 65.2872C45.0086 66.22 46.1447 66.9194 47.4834 67.2371C49.1311 67.6041 50.7797 67.9709 52.6291 67.6457C54.0686 67.4616 55.3028 67.3489 56.5369 67.2355C100.849 62.4114 247.836 52.5522 292.473 50.5757C294.53 50.4908 296.896 50.4546 299.056 50.4897C299.776 50.3977 300.496 50.3056 301.524 50.2629C301.83 49.6898 302.135 49.1182 302.132 48.4965C302.108 48.1093 302.076 47.7225 302.04 47.3377C327.529 45.665 350.405 44.3058 362.69 43.7617C364.195 43.6993 365.928 43.6728 367.509 43.6978C368.036 43.6304 368.563 43.5638 369.316 43.5326C369.539 43.1138 369.762 42.6951 369.76 42.2394C369.717 41.5402 369.638 40.8456 369.559 40.1526C369.336 38.1918 369.115 36.249 369.716 34.2724C369.939 33.6258 369.41 33.2381 368.731 32.9018C367.522 32.178 365.941 32.153 364.209 32.1793C363.314 32.2204 362.418 32.2608 361.516 32.3027L361.509 32.3027C348.748 32.8857 334.706 33.5283 300.894 35.8261C300.838 35.7972 300.783 35.7676 300.727 35.7396C299.075 34.7503 296.913 34.7169 294.548 34.7524C293.321 34.809 292.095 34.8647 290.859 34.9211C279.107 35.4583 266.56 36.0307 245.482 37.3083L240.189 29.9552C240.129 28.9216 240.168 27.8898 240.37 26.8548C240.57 25.9983 239.843 25.4547 238.93 24.9747C237.287 23.9528 235.26 23.8494 233.047 23.8088C231.905 23.8255 230.763 23.8407 229.614 23.8568L229.607 23.8569C215.449 24.0523 200.055 24.2649 167.933 25.3748C186.184 24.0731 204.945 22.7934 222.754 21.6261C256.439 21.0561 292.141 21.3974 323.483 22.4101L323.485 22.4098C324.628 22.4258 325.773 22.4417 327.101 22.5114C328.797 22.6893 330.387 22.2006 331.978 21.711C333.273 21.2944 334.424 20.516 334.542 19.5958C334.598 19.4348 334.644 19.2483 334.694 19.0492C334.777 18.7133 334.869 18.3412 335.034 17.9896C335.213 17.0875 335.413 16.1912 335.614 15.2949C336.013 13.5031 336.414 11.7113 336.65 9.87084C337.261 7.34429 337.076 7.28987 333.461 7.18755C327.031 6.99909 320.587 6.82698 314.132 6.68905C314.19 5.73445 314.341 4.77629 314.634 3.81379C314.938 2.9303 314.215 2.40141 313.287 1.94252C311.635 0.953233 309.475 0.91733 307.109 0.95357C305.882 1.01025 304.654 1.06705 303.419 1.12326C285.583 1.93806 265.915 2.83569 217.373 6.15491C210.56 6.3436 203.899 6.57566 197.262 6.8069C195.633 6.86374 194.006 6.92186 192.378 6.97784C190.247 7.11948 188.287 7.31048 186.654 8.30658Z"
+                    fill="#EEE5D8"
+                  />
+                </svg>
+              </div>
+
+              <!-- Header stars -->
+              <div class="absolute top-0 lg:right-24 right-4 md:right-10">
+                <svg
+                  class="lg:w-[51px] lg:h-[51px] w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.1258 9.5625C19.4721 9.56257 19.809 9.67543 20.0854 9.88401C20.3618 10.0926 20.5628 10.3855 20.6579 10.7185L22.3856 16.7662C22.7575 18.0687 23.4554 19.2548 24.4132 20.2126C25.371 21.1704 26.5571 21.8683 27.8596 22.2402L33.9073 23.9679C34.2401 24.0632 34.5328 24.2643 34.7411 24.5407C34.9495 24.8171 35.0622 25.1539 35.0622 25.5C35.0622 25.8461 34.9495 26.1829 34.7411 26.4593C34.5328 26.7357 34.2401 26.9368 33.9073 27.0321L27.8596 28.7598C26.5571 29.1317 25.371 29.8296 24.4132 30.7874C23.4554 31.7452 22.7575 32.9313 22.3856 34.2338L20.6579 40.2815C20.5626 40.6143 20.3615 40.9069 20.0851 41.1153C19.8087 41.3237 19.472 41.4364 19.1258 41.4364C18.7797 41.4364 18.4429 41.3237 18.1665 41.1153C17.8901 40.9069 17.689 40.6143 17.5937 40.2815L15.8661 34.2338C15.4941 32.9313 14.7962 31.7452 13.8384 30.7874C12.8806 29.8296 11.6945 29.1317 10.3921 28.7598L4.3443 27.0321C4.01154 26.9368 3.71886 26.7357 3.5105 26.4593C3.30215 26.1829 3.18945 25.8461 3.18945 25.5C3.18945 25.1539 3.30215 24.8171 3.5105 24.5407C3.71886 24.2643 4.01154 24.0632 4.3443 23.9679L10.3921 22.2402C11.6945 21.8683 12.8806 21.1704 13.8384 20.2126C14.7962 19.2548 15.4941 18.0687 15.8661 16.7662L17.5937 10.7185C17.6888 10.3855 17.8898 10.0926 18.1662 9.88401C18.4427 9.67543 18.7795 9.56257 19.1258 9.5625ZM38.2508 3.1875C38.6063 3.1873 38.9518 3.306 39.2321 3.52471C39.5124 3.74342 39.7115 4.04958 39.7978 4.3945L40.3461 6.596C40.8476 8.5935 42.4073 10.1532 44.4048 10.6547L46.6063 11.203C46.9519 11.2886 47.2589 11.4874 47.4783 11.7678C47.6977 12.0482 47.8169 12.394 47.8169 12.75C47.8169 13.106 47.6977 13.4518 47.4783 13.7322C47.2589 14.0126 46.9519 14.2114 46.6063 14.297L44.4048 14.8453C42.4073 15.3468 40.8476 16.9065 40.3461 18.904L39.7978 21.1055C39.7122 21.4511 39.5134 21.758 39.233 21.9775C38.9526 22.1969 38.6068 22.3161 38.2508 22.3161C37.8948 22.3161 37.549 22.1969 37.2686 21.9775C36.9883 21.758 36.7894 21.4511 36.7038 21.1055L36.1556 18.904C35.9104 17.9232 35.4032 17.0274 34.6883 16.3125C33.9734 15.5976 33.0776 15.0904 32.0968 14.8453L29.8953 14.297C29.5497 14.2114 29.2428 14.0126 29.0234 13.7322C28.8039 13.4518 28.6847 13.106 28.6847 12.75C28.6847 12.394 28.8039 12.0482 29.0234 11.7678C29.2428 11.4874 29.5497 11.2886 29.8953 11.203L32.0968 10.6547C33.0776 10.4096 33.9734 9.90239 34.6883 9.18749C35.4032 8.47259 35.9104 7.57684 36.1556 6.596L36.7038 4.3945C36.7901 4.04958 36.9892 3.74342 37.2695 3.52471C37.5499 3.306 37.8953 3.1873 38.2508 3.1875ZM35.0633 31.875C35.398 31.8748 35.7243 31.98 35.9959 32.1757C36.2675 32.3713 36.4705 32.6476 36.5763 32.9651L37.4136 35.479C37.7323 36.4289 38.4761 37.1769 39.4281 37.4935L41.9419 38.3329C42.2585 38.4391 42.5337 38.6422 42.7286 38.9133C42.9236 39.1844 43.0284 39.5098 43.0284 39.8438C43.0284 40.1777 42.9236 40.5031 42.7286 40.7742C42.5337 41.0453 42.2585 41.2484 41.9419 41.3546L39.4281 42.194C38.4782 42.5128 37.7302 43.2565 37.4136 44.2085L36.5742 46.7224C36.4679 47.0389 36.2649 47.3141 35.9938 47.5091C35.7227 47.704 35.3972 47.8089 35.0633 47.8089C34.7294 47.8089 34.4039 47.704 34.1328 47.5091C33.8617 47.3141 33.6587 47.0389 33.5524 46.7224L32.7131 44.2085C32.5565 43.7395 32.293 43.3133 31.9434 42.9637C31.5938 42.614 31.1676 42.3505 30.6986 42.194L28.1847 41.3546C27.8681 41.2484 27.593 41.0453 27.398 40.7742C27.2031 40.5031 27.0982 40.1777 27.0982 39.8438C27.0982 39.5098 27.2031 39.1844 27.398 38.9133C27.593 38.6422 27.8681 38.4391 28.1847 38.3329L30.6986 37.4935C31.6484 37.1747 32.3964 36.431 32.7131 35.479L33.5524 32.9651C33.6581 32.6479 33.8608 32.3719 34.132 32.1763C34.4031 31.9807 34.7289 31.8753 35.0633 31.875Z"
+                    fill="#CEAF83"
+                  />
+                </svg>
+              </div>
+
+              <!-- Category Links -->
+              <div
+                class="flex items-center gap-10 mt-6 text-sm text-gray-600 md:text-base lg:mt-10 lg:gap-32"
+              >
+                <a href="#" class="font-medium font-urbanist">Villa</a>
+                <a href="#" class="font-medium font-urbanist">Family House</a>
+                <a href="#" class="font-medium font-urbanist">Hotel</a>
+                <a href="#" class="font-medium font-urbanist">Room</a>
+              </div>
+
+              <!-- Call to Action -->
+              <div class="flex items-center gap-8 mt-8 lg:mt-10 lg:gap-11">
+                <a
+                  href=""
+                  class="text-beige-200 text-sm font-semibold lg:font-bold bg-cream-100 p-4 transition duration-300 ease-in-out hover:shadow-bottom lg:px-[26px] lg:py-[15px] rounded-full"
+                  >Discover now</a
+                >
+
+                <!-- Youtube Video Play Button -->
+                <label for="my-modal" class="relative cursor-pointer">
+                  <!-- Youtube video Circle (Button) -->
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex items-center justify-center w-[52px] h-[52px] rounded-ful relative"
+                    >
+                      <!-- Darken effect overlay -->
+                      <div
+                        class="absolute inset-0 bg-black rounded-full opacity-40"
+                      ></div>
+                      <img
+                        class="object-cover w-full h-full rounded-full"
+                        src="../assets/img/house.jpeg"
+                        alt="Youtube video play button image"
+                      />
+
+                      <!-- Triangle (Play Icon) -->
+                      <svg
+                        class="absolute"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.5 5.65289C4.5 4.22589 6.029 3.32289 7.279 4.00989L18.819 10.3569C20.114 11.0689 20.114 12.9299 18.819 13.6429L7.28 19.9899C6.03 20.6769 4.501 19.7729 4.501 18.3469L4.5 5.65289Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-base text-black lg:text-lg font-urbanist">
+                      Watch our story
+                    </p>
+                  </div>
+                </label>
+
+                <!-- Video Modal -->
+                <input type="checkbox" id="my-modal" class="modal-toggle" />
+                <div class="modal">
+                  <div class="relative modal-box">
+                    <!-- Close Button -->
+                    <label
+                      for="my-modal"
+                      class="absolute btn btn-sm btn-circle right-2 top-2"
+                      >✕</label
+                    >
+
+                    <!-- Video Player -->
+                    <div class="w-full h-auto">
+                      <video id="video-player" controls class="w-full h-full">
+                        <source
+                          src="https://www.w3schools.com/html/mov_bbb.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative hidden mx-auto mt-16 lg:mt-0 basis-2/5 md:mt-0 md:block"
+            >
+              <img
+                class="rounded-3xl w-64 lg:w-[536px] lg:h-[734px] object-cover"
+                src="../assets/img/hero.jpeg"
+                alt="Hero Image"
+              />
+
+              <!-- Floating Circles with Images -->
+              <div
+                class="absolute w-20 h-20 p-1 bg-white rounded-full lg:w-32 lg:h-32 lg:-top-16 lg:-left-16 -top-10 -left-10"
+              >
+                <img
+                  class="object-cover w-full h-full p-1.5 rounded-full"
+                  src="../assets/img/hero-1.jpeg"
+                  alt="Villa image"
+                />
+              </div>
+              <div
+                class="absolute w-20 h-20 lg:w-32 lg:h-32 p-1 bg-white rounded-full top-[43%] lg:-right-16 -right-2"
+              >
+                <img
+                  class="object-cover w-full h-full p-1.5 rounded-full"
+                  src="../assets/img/hero-2.jpeg"
+                  alt="Winter villa image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Large screen availability Search Bar -->
+          <div class="absolute bottom-10 w-[1102px] hidden lg:block">
+            <p class="text-lg text-black font-playfair">Check Availability</p>
+            <div class="mt-5">
+              <form
+                class="w-full lg:w-[1100px] bg-white rounded-full shadow-bottom py-5"
+              >
+                <div class="grid grid-cols-6 ms-10">
+                  <div class="text-center border-r-2 border-dashed">
+                    <label
+                      for="countries"
+                      class="block mb-2.5 text-lg text-center font-playfair text-black"
+                      >Check In</label
+                    >
+                    <select
+                      id="countries"
+                      class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                    >
+                      <option selected>Add Dates</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="text-center border-r-2 border-dashed">
+                    <label
+                      for="countries"
+                      class="block mb-2.5 text-lg text-center font-playfair text-black"
+                      >Check Out</label
+                    >
+                    <select
+                      id="countries"
+                      class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                    >
+                      <option selected>Add Dates</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="text-center border-r-2 border-dashed">
+                    <label
+                      for="countries"
+                      class="block mb-2.5 text-lg text-center font-playfair text-black"
+                      >Adults</label
+                    >
+                    <select
+                      id="countries"
+                      class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                    >
+                      <option selected>Add Adults</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="text-center border-r-2 border-dashed">
+                    <label
+                      for="countries"
+                      class="block mb-2.5 text-lg text-center font-playfair text-black"
+                      >Children</label
+                    >
+                    <select
+                      id="countries"
+                      class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                    >
+                      <option selected>Add Children</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="text-center">
+                    <label
+                      for="countries"
+                      class="block mb-2.5 text-lg text-center font-playfair text-black"
+                      >Room's</label
+                    >
+                    <select
+                      id="countries"
+                      class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                    >
+                      <option selected>Add Room's</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+
+                  <!-- Search button -->
+                  <button
+                    class="flex items-center justify-center w-[76px] h-[76px] rounded-full bg-beige-200 ms-20"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="33px"
+                      viewBox="0 -960 960 960"
+                      width="33px"
+                      fill="#fff"
+                    >
+                      <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Availability Search Bar For Medium Device -->
+      <section class="container hidden px-3 md:block lg:hidden">
+        <div>
+          <form class="py-4 bg-white rounded-full shadow-bottom">
+            <div class="grid grid-cols-6 px-3">
+              <div class="text-center border-r-2 border-dashed">
+                <label
+                  for="countries"
+                  class="block mb-2.5 text-lg text-center font-playfair text-black"
+                  >Check In</label
+                >
+                <select
+                  id="countries"
+                  class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                >
+                  <option selected>Add Dates</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+              <div class="text-center border-r-2 border-dashed">
+                <label
+                  for="countries"
+                  class="block mb-2.5 text-lg text-center font-playfair text-black"
+                  >Check Out</label
+                >
+                <select
+                  id="countries"
+                  class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                >
+                  <option selected>Add Dates</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+              <div class="text-center border-r-2 border-dashed">
+                <label
+                  for="countries"
+                  class="block mb-2.5 text-lg text-center font-playfair text-black"
+                  >Adults</label
+                >
+                <select
+                  id="countries"
+                  class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                >
+                  <option selected>Add Adults</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+              <div class="text-center border-r-2 border-dashed">
+                <label
+                  for="countries"
+                  class="block mb-2.5 text-lg text-center font-playfair text-black"
+                  >Children</label
+                >
+                <select
+                  id="countries"
+                  class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                >
+                  <option selected>Add Children</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+              <div class="text-center">
+                <label
+                  for="countries"
+                  class="block mb-2.5 text-lg text-center font-playfair text-black"
+                  >Room's</label
+                >
+                <select
+                  id="countries"
+                  class="text-base text-center appearance-none focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                >
+                  <option selected>Add Room's</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+
+              <!-- Search button -->
+              <button
+                class="flex items-center justify-center w-[76px] h-[76px] rounded-full bg-beige-200 ms-10"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="33px"
+                  viewBox="0 -960 960 960"
+                  width="33px"
+                  fill="#fff"
+                >
+                  <path
+                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Availability Search Bar For Small Device -->
+      <section class="container block px-3 md:hidden">
+        <div class="pt-0">
+          <form class="rounded-xl bg-cream-100 shadow-bottom">
+            <div class="grid grid-cols-1 ">
+              <div class="px-6">
+                <div class="relative mb-3 left-1">
+                  <input
+                    name="check_in"
+                    id="check_in"
+                    placeholder="Check In"
+                    type="text"
+                    onfocus="hideIcon(this, 'checkIn')"
+                    onblur="showIcon(this, 'checkIn')"
+                    class="w-full pr-10 text-lg font-medium bg-transparent placeholder-grayCustom-100 focus:outline-none focus:border-none font-urbanist"
+                  />
+
+                  <!-- Calendar Icon (SVG) -->
+                  <div
+                    class="absolute right-0 flex items-center pointer-events-none top-1.5"
+                    id="checkIn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 text-gray-400"
+                      viewBox="0 -960 960 960"
+                    >
+                      <path
+                        d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="relative mb-3 left-1">
+                  <input
+                    name="check_out"
+                    id="check_out"
+                    placeholder="Check Out"
+                    type="text"
+                    onfocus="hideIcon(this, 'checkOut')"
+                    onblur="showIcon(this, 'checkOut')"
+                    class="w-full pr-10 text-lg font-medium bg-transparent placeholder-grayCustom-100 focus:outline-none focus:border-none font-urbanist"
+                  />
+
+                  <!-- Calendar Icon (SVG) -->
+                  <div
+                    class="absolute right-0 flex items-center pointer-events-none top-1.5"
+                    id="checkOut"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 text-gray-400"
+                      viewBox="0 -960 960 960"
+                    >
+                      <path
+                        d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <select
+                    id="countries"
+                    class="w-full py-1 text-lg font-medium bg-transparent focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                  >
+                    <option selected>Add Adults</option>
+                    <option value="1">1 Adults</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <select
+                    id="countries"
+                    class="w-full py-1 text-lg font-medium bg-transparent focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                  >
+                    <option selected>Add Children</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <select
+                    id="countries"
+                    class="w-full py-1 text-lg font-medium bg-transparent focus:outline-none focus:border-none font-urbanist text-grayCustom-100"
+                  >
+                    <option selected>Add Room's</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Search button -->
+              <button
+                class="flex items-center justify-center w-full h-16 text-lg font-medium text-white rounded-b-xl bg-beige-200"
+              >
+                Check Availability
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Hotel Room Booking section -->
+      <section
+        class="md:mt-14"
+        style="background-image: url(../assets/img/bg.png)"
+      >
+        <div class="container px-3 lg:pt-16 pb-[84px] mx-auto lg:px-0">
+          <div class="flex flex-col items-end gap-5 md:flex-row">
+            <div class="basis-2/4">
+              <h3
+                class="text-xl md:text-3xl lg:text-[32px] text-black font-bold font-playfair"
+              >
+                Discover Homeya's Finest Properties For Your Dream Home
+              </h3>
+            </div>
+            <div class="basis-2/4">
+              <p class="text-sm font-medium lg:text-base font-urbanist">
+                All three of Rooms Hotels locations are restorations that
+                translate historic locations into places of contemporary
+                comfort. Industrial architecture, salvaged building materials
+                and the unique approach
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 mt-16">
+            <!-- Room 1 -->
+            <a
+              href=""
+              class="col-span-12 lg:col-span-7 h-80 md:h-96 lg:h-[458px] relative overflow-hidden"
+            >
+              <img
+                class="object-cover w-full h-full transition-all duration-300 rounded-xl md:rounded-t-xl hover:scale-110"
+                src="../assets/img/hotel-room1.jpeg"
+                alt="Hotel Room Image"
+              />
+              <div
+                class="absolute px-3 py-1.5 md:px-5 md:py-2 bg-white rounded-xl top-6 right-5 md:top-[38px] md:right-[33px]"
+              >
+                <span
+                  class="text-2xl font-semibold font-playfair text-beige-200"
+                  >$62,00</span
+                >
+                <span class="text-base font-medium text-beige-200 font-urbanist"
+                  >/Day</span
+                >
+              </div>
+              <div
+                class="absolute bottom-0 w-full md:h-[230px] p-5 text-white pt-28 md:ps-[38px] rounded-b-xl bg-custom-gradient overflow-hidden"
+              >
+                <h3 class="text-xl md:text-[32px] font-bold font-playfair">
+                  Deluxe Double Room
+                </h3>
+                <div
+                  class="flex items-center pt-5 text-sm font-medium md:font-semibold font-urbanist"
+                >
+                  <p class="pr-6 border-r-2">500 Sqft</p>
+                  <p class="px-6 border-r-2">3-4 guests</p>
+                  <p class="ps-6">Free Wi-fi</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Room 2 -->
+            <a
+              href=""
+              class="col-span-12 md:col-span-6 lg:col-span-5 h-80 md:h-96 lg:h-[458px] relative overflow-hidden"
+            >
+              <img
+                class="object-cover w-full h-full transition-all duration-300 rounded-xl hover:scale-110"
+                src="../assets/img/hotel-room2.jpeg"
+                alt="Hotel Room Image"
+              />
+
+              <div
+                class="absolute px-3 py-1.5 md:px-5 md:py-2 bg-white rounded-xl top-6 right-5 rounded-b-xl md:top-[38px] md:right-[33px]"
+              >
+                <span
+                  class="text-2xl font-semibold font-playfair text-beige-200"
+                  >$62,00</span
+                >
+                <span class="text-base font-medium text-beige-200 font-urbanist"
+                  >/Day</span
+                >
+              </div>
+              <div
+                class="absolute bottom-0 w-full md:h-[230px] p-5 text-white pt-28 md:ps-[38px] rounded-b-xl bg-custom-gradient"
+              >
+                <h3
+                  class="text-xl lg:pb-2 md:text-[28px] lg:text-[32px] text-white lg:text-beige-200 font-bold font-playfair"
+                >
+                  Deluxe Double Room
+                </h3>
+                <hr
+                  class="h-[2px] bg-beige-200 border-none w-4/5 hidden lg:block"
+                />
+                <div
+                  class="flex items-center pt-5 text-sm font-medium lg:font-semibold font-urbanist"
+                >
+                  <p class="pr-6 border-r-2">500 Sqft</p>
+                  <p class="px-6 border-r-2">3-4 guests</p>
+                  <p class="ps-6">Free Wi-fi</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Room 3 -->
+            <a
+              href=""
+              class="col-span-12 md:col-span-6 lg:col-span-4 h-80 md:h-96 lg:h-[445px] relative overflow-hidden"
+            >
+              <img
+                class="object-cover w-full h-full transition-all duration-300 rounded-xl hover:scale-110"
+                src="../assets/img/hotel-room3.jpeg"
+                alt="Hotel Room Image"
+              />
+
+              <div
+                class="absolute px-3 py-1.5 md:px-5 md:py-2 bg-white rounded-xl top-6 right-5 rounded-b-xl md:top-[38px] md:right-[33px]"
+              >
+                <span
+                  class="text-2xl font-semibold font-playfair text-beige-200"
+                  >$62,00</span
+                >
+                <span class="text-base font-medium text-beige-200 font-urbanist"
+                  >/Day</span
+                >
+              </div>
+              <div
+                class="absolute bottom-0 w-full md:h-[230px] p-5 text-white pt-28 md:ps-[38px] rounded-b-xl bg-custom-gradient"
+              >
+                <h3
+                  class="text-xl lg:pb-2 md:text-[28px] lg:text-[32px] text-white font-bold font-playfair"
+                >
+                  Hill View Suite
+                </h3>
+                <div
+                  class="flex items-center pt-5 text-sm font-medium lg:font-semibold font-urbanist"
+                >
+                  <p class="pr-6 border-r-2">500 Sqft</p>
+                  <p class="px-6 border-r-2">3-4 guests</p>
+                  <p class="ps-6">Free Wi-fi</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Room 4 -->
+            <a
+              href=""
+              class="col-span-12 md:col-span-6 lg:col-span-4 h-80 md:h-96 lg:h-[445px] relative overflow-hidden"
+            >
+              <img
+                class="object-cover w-full h-full transition-all duration-300 rounded-xl hover:scale-110"
+                src="../assets/img/hotel-room4.jpeg"
+                alt="Hotel Room Image"
+              />
+
+              <div
+                class="absolute px-3 py-1.5 md:px-5 md:py-2 bg-white rounded-xl top-6 right-5 rounded-b-xl md:top-[38px] md:right-[33px]"
+              >
+                <span
+                  class="text-2xl font-semibold font-playfair text-beige-200"
+                  >$62,00</span
+                >
+                <span class="text-base font-medium text-beige-200 font-urbanist"
+                  >/Day</span
+                >
+              </div>
+              <div
+                class="absolute bottom-0 w-full md:h-[230px] p-5 text-white pt-28 md:ps-[38px] rounded-b-xl bg-custom-gradient"
+              >
+                <h3
+                  class="text-xl lg:pb-2 md:text-[28px] lg:text-[32px] text-white font-bold font-playfair"
+                >
+                  Hill View Suite
+                </h3>
+                <div
+                  class="flex items-center pt-5 text-sm font-medium lg:font-semibold font-urbanist"
+                >
+                  <p class="pr-6 border-r-2">500 Sqft</p>
+                  <p class="px-6 border-r-2">3-4 guests</p>
+                  <p class="ps-6">Free Wi-fi</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Room 5 -->
+            <a
+              href=""
+              class="col-span-12 md:col-span-6 lg:col-span-4 h-80 md:h-96 lg:h-[445px] relative overflow-hidden"
+            >
+              <img
+                class="object-cover w-full h-full transition-all duration-300 rounded-xl hover:scale-110"
+                src="../assets/img/hotel-room5.jpeg"
+                alt="Hotel Room Image"
+              />
+
+              <div
+                class="absolute px-3 py-1.5 md:px-5 md:py-2 bg-white rounded-xl top-6 right-5 rounded-b-xl md:top-[38px] md:right-[33px]"
+              >
+                <span
+                  class="text-2xl font-semibold font-playfair text-beige-200"
+                  >$62,00</span
+                >
+                <span class="text-base font-medium text-beige-200 font-urbanist"
+                  >/Day</span
+                >
+              </div>
+              <div
+                class="absolute bottom-0 w-full md:h-[230px] p-5 text-white pt-28 md:ps-[38px] rounded-b-xl bg-custom-gradient"
+              >
+                <h3
+                  class="text-xl lg:pb-2 md:text-[28px] lg:text-[32px] text-white font-bold font-playfair"
+                >
+                  Hill View Suite
+                </h3>
+                <div
+                  class="flex items-center pt-5 text-sm font-medium lg:font-semibold font-urbanist"
+                >
+                  <p class="pr-6 border-r-2">500 Sqft</p>
+                  <p class="px-6 border-r-2">3-4 guests</p>
+                  <p class="ps-6">Free Wi-fi</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- View more btn -->
+          <div class="mt-[52px] flex justify-center">
+            <a
+              href=""
+              class="flex items-center justify-center text-white text-sm font-bold font-urbanist bg-beige-200 px-[26px] py-[15px] rounded-full"
+            >
+              View all
+              <!-- SVG icon -->
+              <svg
+                class="w-6 h-5 ml-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="#fff"
+              >
+                <path
+                  d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- User testimonial section -->
+      <section
+        class="overflow-hidden bg-split-sm md:bg-split-lg"
+      >
+        <div class="container px-3 mx-auto">
+          <div
+            class="flex flex-col md:flex-row items-center gap-20 md:gap-10 lg:gap-16 md:h-80 lg:h-[470px]"
+          >
+            <div class="basis-2/4">
+              <h3
+                class="pt-12 text-3xl font-bold text-white capitalize md:pt-0 lg:text-5xl font-playfair"
+              >
+                Rave reviews from our satisfied guests
+              </h3>
+
+              <!-- Slider Navigation -->
+              <div class="flex items-center gap-4 mt-6">
+                <button
+                  class="p-3 bg-white rounded-full shadow-md swiper-button-prev hover:bg-gray-100"
+                >
+                  <svg
+                    class="w-5 h-5 rotate-180 md:w-6 md:h-6 fill-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                  >
+                    <path
+                      d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"
+                    />
+                  </svg>
+                </button>
+                <div class="flex gap-2">
+                  <span
+                    class="w-2 h-2 bg-white rounded-full swiper-pagination"
+                  ></span>
+                  <span class="w-2 h-2 bg-gray-500 rounded-full"></span>
+                  <span class="w-2 h-2 bg-gray-500 rounded-full"></span>
+                </div>
+                <button
+                  class="swiper-button-next p-3 rounded-full bg-[#b08a5b] shadow-md hover:bg-[#a0774e]"
+                >
+                  <svg
+                    class="w-5 h-5 fill-white md:w-6 md:h-"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                  >
+                    <path
+                      d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Testimonial slide -->
+            <div class="relative basis-2/4">
+              <div
+                class="inset-0 right-0 flex w-screen gap-4 md:absolute md:items-center"
+              >
+                <!-- Review 1 -->
+                <div
+                  class="bg-white rounded-3xl mx-3 w-full md:w-[535px] border border-[#cacaca]"
+                >
+                  <div class="p-5 md:px-8 md:pt-8 md:pb-5">
+                    <div class="relative flex items-center gap-4">
+                      <img
+                        class="w-12 h-12 rounded-full lg:h-14 lg:w-14"
+                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                        alt="Reviewer"
+                      />
+                      <div>
+                        <h3
+                          class="font-semibold lg:text-lg md:font-bold font-urbanist"
+                        >
+                          Arman
+                        </h3>
+                        <p
+                          class="text-base lg:text-lg text-grayCustom-100 font-urbanist"
+                        >
+                          Webflow Developer
+                        </p>
+                      </div>
+                      <p
+                        class="absolute font-medium text-7xl md:text-[100px] font-urbanist text-beige-200 right-3"
+                      >
+                        &ldquo;
+                      </p>
+                    </div>
+                    <p
+                      class="mt-8 text-sm font-medium text-gray-600 lg:font-semibold lg:mt-10 lg:text-lg font-urbanist"
+                    >
+                    Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn't on our original designs.
+                    </p>
+                  </div>
+                  <div class="flex items-center px-8 pb-6">
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div
+                  class="bg-white rounded-3xl mx-3 w-full md:w-[535px] border border-[#cacaca] hidden md:block"
+                >
+                  <div class="p-5 md:px-8 md:pt-8 md:pb-5">
+                    <div class="relative flex items-center gap-4">
+                      <img
+                        class="w-12 h-12 rounded-full lg:h-14 lg:w-14"
+                        src="https://randomuser.me/api/portraits/women/44.jpg"
+                        alt="Reviewer"
+                      />
+                      <div>
+                        <h3
+                          class="font-semibold lg:text-lg md:font-bold font-urbanist"
+                        >
+                          Emma
+                        </h3>
+                        <p
+                          class="text-base lg:text-lg text-grayCustom-100 font-urbanist"
+                        >
+                          UI/UX Designer
+                        </p>
+                      </div>
+                      <p
+                        class="absolute font-medium text-7xl md:text-[100px] font-urbanist text-beige-200 right-3"
+                      >
+                        &ldquo;
+                      </p>
+                    </div>
+                    <p
+                      class="mt-8 text-sm font-medium text-gray-600 lg:font-semibold lg:mt-10 lg:text-lg font-urbanist"
+                    >
+                    Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn't on our original designs.
+                    </p>
+                  </div>
+                  <div class="flex items-center px-8 pb-6">
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-xl text-yellow-500"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="bg-no-repeat bg-[#EBEBEB] text-base-content"
+        style="background-image: url(../assets/img/earth.png)"
+      >
+        <div class="container p-10 pb-16 mx-auto text-black footer">
+          <aside>
+            <img class="w-44" src="../assets/img/logo.png" alt="Logo" />
+            <p class="text-[22px] font-medium font-urbanist">
+              Follow us on social media
+            </p>
+            <div class="flex items-center gap-6 mt-5">
+              <a
+                href=""
+                class="flex items-center justify-center rounded-full w-11 h-11 bg-beige-200"
+              >
+                <i class="text-[20px] text-white bx bxl-facebook"></i>
+              </a>
+              <a
+                href=""
+                class="flex items-center justify-center rounded-full w-11 h-11 bg-beige-200"
+              >
+                <i class="text-[20px] text-white bx bxl-linkedin"></i>
+              </a>
+              <a
+                href=""
+                class="flex items-center justify-center rounded-full w-11 h-11 bg-beige-200"
+              >
+                <i class="text-[20px] text-white bx bxl-twitter"></i>
+              </a>
+            </div>
+          </aside>
+          <nav class="space-y-3 md:mt-16">
+            <h6 class="font-playfair font-bold text-[22px] pb-1">
+              Quick Links
+            </h6>
+            <a class="text-base font-medium md:ps-7 font-urbanist">About us</a>
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >Our Service</a
+            >
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >Our Blog's</a
+            >
+            <a class="text-base font-medium md:ps-7 font-urbanist">Contact</a>
+          </nav>
+          <nav class="space-y-3 md:mt-16">
+            <h6 class="font-playfair font-bold text-[22px] pb-1">
+              Appointment
+            </h6>
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >Web Design and Development</a
+            >
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >UI UX Service</a
+            >
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >Digital marketing</a
+            >
+            <a class="text-base font-medium md:ps-7 font-urbanist"
+              >Custom Web Design</a
+            >
+          </nav>
+          <nav class="space-y-3 md:mt-16">
+            <h6 class="font-playfair font-bold text-[22px] pb-1">
+              Contact Info
+            </h6>
+            <a class="flex gap-3 text-base font-medium font-urbanist">
+              <i class="text-2xl bx bx-envelope"></i>
+              <div>
+                <p class="text-lg">Email</p>
+                <p class="text-base">hunkcyAgencyUI@gamil.com</p>
+              </div>
+            </a>
+            <a class="flex gap-3 text-base font-medium font-urbanist">
+              <i class="text-2xl bx bx-map"></i>
+              <div>
+                <p class="text-lg">Location</p>
+                <p class="text-base">
+                  302/1, Hazi Tower, Gandaria New Rd, Dhaka 1204
+                </p>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="bg-[#1C1B1F]">
+        <div class="container items-center p-4 mx-auto text-white footer">
+          <aside class="items-center grid-flow-col">
+            <p>© <span id="year"></span> Bookky | All right reserved</p>
+          </aside>
+          <nav
+            class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+          >
+            <a> Trems of service </a>
+            <a> Privacy policy </a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
